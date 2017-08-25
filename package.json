@@ -1,6 +1,6 @@
 {
   "name": "subrequests-json-merger",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "description": "Subrequests JSON Merger allows you to use Subrequests and return a JSON document instead of a multipart/related response.",
   "main": "dist.js",
   "scripts": {
