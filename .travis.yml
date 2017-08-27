@@ -1,4 +1,3 @@
-sudo: false
 language: node_js
 cache:
   directories:
@@ -15,9 +14,9 @@ cache:
     - .tmp
 before_install:
   - git fetch origin --tags
+  - npm install subrequests
 before_script:
   - npm prune
-  - npm install subrequests
 script:
   - npm test
 after_success:

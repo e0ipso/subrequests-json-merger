@@ -1,6 +1,6 @@
 {
   "name": "subrequests-json-merger",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Subrequests JSON Merger allows you to use Subrequests and return a JSON document instead of a multipart/related response.",
   "main": "dist.js",
   "scripts": {
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/e0ipso/subrequests-json-merger#readme",
   "peerDependencies": {
-    "subrequests": "git+ssh://git@github.com/e0ipso/subrequests.git#v1.0.2"
+    "subrequests": "^1.1.0"
   },
   "dependencies": {
     "flow-remove-types": "^1.2.1"
