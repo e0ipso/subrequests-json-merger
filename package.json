@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/e0ipso/subrequests-json-merger#readme",
   "peerDependencies": {
-    "subrequests": "^1.1.0"
+    "subrequests": "^2.0.2"
   },
   "dependencies": {
     "flow-remove-types": "^1.2.1"
