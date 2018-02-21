@@ -1,6 +1,6 @@
 {
   "name": "subrequests-json-merger",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Subrequests JSON Merger allows you to use Subrequests and return a JSON document instead of a multipart/related response.",
   "main": "dist.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "precommit": "npm run flow",
     "postinstall": "npm run build",
     "flow": "flow",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -41,8 +41,8 @@
     "flow-bin": "^0.64.0",
     "istanbul": "^0.4.5",
     "nodeunit": "^0.11.1",
-    "semantic-release": "^12.2.4",
-    "semantic-release-conventional-commits": "^1.0.2",
+    "semantic-release": "^12.4.1",
+    "semantic-release-conventional-commits": "^2.0.0",
     "validate-commit-msg": "^2.14.0"
   },
   "release": {
