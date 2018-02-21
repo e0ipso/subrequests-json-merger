@@ -10,6 +10,7 @@
     "precommit": "npm run flow",
     "postinstall": "npm run build",
     "flow": "flow",
+    "lint": "eslint src",
     "semantic-release": "semantic-release"
   },
   "repository": {
