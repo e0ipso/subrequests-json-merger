@@ -1,7 +1,7 @@
-node_modules
-coverage
-npm-debug.log
-scratch
+/node_modules
+/coverage
+/npm-debug.log
+/scratch
 .tmp
-dist.js
-flow-typed
+/dist.js
+/flow-typed

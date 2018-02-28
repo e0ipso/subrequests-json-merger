@@ -1,6 +1,6 @@
 // @flow
 
-import type { Response, ResponseMergerInterface } from 'subrequests/types/Responses';
+import type { Response, ResponseMergerStaticsInterface } from 'subrequests/types/Responses';
 
 const { ResponseMergerBase } = require('subrequests').lib;
 
@@ -10,8 +10,7 @@ const { ResponseMergerBase } = require('subrequests').lib;
  *
  * @class JsonResponses
  */
-class JsonResponse extends ResponseMergerBase implements ResponseMergerInterface {
-
+class JsonResponse extends ResponseMergerBase {
   /**
    * Merges many responses into a single one.
    *
@@ -61,13 +60,13 @@ class JsonResponse extends ResponseMergerBase implements ResponseMergerInterface
    */
   static serializeResponse(response: Response): string {
     const { headers, body } = response;
-    const headersObject: Object = [...headers].reduce((carry, tuple) => {
-      carry[tuple[0]] = tuple[1];
+    const headersObject: Object = [...headers].reduce((carry, [key, val]) => {
+      carry[key] = val;
       return carry;
     }, {});
     return JSON.stringify({ headers: headersObject, body });
   }
-
 }
+(JsonResponse: ResponseMergerStaticsInterface); // eslint-disable-line no-unused-expressions
 
 module.exports = JsonResponse;
