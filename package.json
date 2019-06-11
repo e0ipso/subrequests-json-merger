@@ -40,7 +40,7 @@
     "eslint-plugin-flowtype": "^3.2.0",
     "eslint-plugin-import": "^2.6.1",
     "flow-bin": "^0.92.1",
-    "husky": "^1.0.0",
+    "husky": "^2.4.1",
     "istanbul": "^0.4.5",
     "nodeunit": "^0.11.1",
     "semantic-release": "^15.5.0",
