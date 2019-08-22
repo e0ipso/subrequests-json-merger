@@ -31,7 +31,7 @@
     "subrequests": "^2.0.2"
   },
   "dependencies": {
-    "flow-remove-types": "^1.2.1"
+    "flow-remove-types": "^2.106.0"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
