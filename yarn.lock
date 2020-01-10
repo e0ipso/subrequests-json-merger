@@ -2039,11 +2039,25 @@ flow-copy-source@^1.2.0:
     kefir "^3.7.3"
     yargs "^11.0.0"
 
+flow-parser@^0.116.0:
+  version "0.116.0"
+  resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.116.0.tgz#7c08e4559a37863d95870e3ffb5523c5fc3525b1"
+  integrity sha512-sHiUjYI9U7H94diCN8BdzwYFJIkyCy2GN73UDFbKHTIuLdfROfZZwD6jAv2qWMl7lcPrBK9YAVeArLLbekxVeg==
+
 flow-remove-types@^1.2.1:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/flow-remove-types/-/flow-remove-types-1.2.3.tgz#6131aefc7da43364bb8b479758c9dec7735d1a18"
   dependencies:
     babylon "^6.15.0"
+    vlq "^0.2.1"
+
+flow-remove-types@^2.116.0:
+  version "2.116.0"
+  resolved "https://registry.yarnpkg.com/flow-remove-types/-/flow-remove-types-2.116.0.tgz#b3b0e3c4d8d558cd48507e4d819806df180ba09f"
+  integrity sha512-Qx5aweN5VujWMBmNWT4EeRYBrfY1qbCNUlUnmL8RAADDyVPI0gKAMr4QeL8ppUbxKGXkOlc8xnHMvATB3RL1ew==
+  dependencies:
+    flow-parser "^0.116.0"
+    pirates "^3.0.2"
     vlq "^0.2.1"
 
 flush-write-stream@^1.0.0:
@@ -3955,6 +3969,11 @@ node-gyp@^3.8.0:
     tar "^2.0.0"
     which "1"
 
+node-modules-regexp@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/node-modules-regexp/-/node-modules-regexp-1.0.0.tgz#8d9dbe28964a4ac5712e9131642107c71e90ec40"
+  integrity sha1-jZ2+KJZKSsVxLpExZCEHxx6Q7EA=
+
 node-pre-gyp@^0.6.39:
   version "0.6.39"
   resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.6.39.tgz#c00e96860b23c0e1420ac7befc5044e1d78d8649"
@@ -4657,6 +4676,13 @@ pinkie-promise@^2.0.0:
 pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
+
+pirates@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/pirates/-/pirates-3.0.2.tgz#7e6f85413fd9161ab4e12b539b06010d85954bb9"
+  integrity sha512-c5CgUJq6H2k6MJz72Ak1F5sN9n9wlSlJyEnwvpm9/y3WB4E3pHBDT2c6PEiS1vyJvq2bUxUAIu0EGf8Cx4Ic7Q==
+  dependencies:
+    node-modules-regexp "^1.0.0"
 
 pkg-conf@^2.1.0:
   version "2.1.0"
